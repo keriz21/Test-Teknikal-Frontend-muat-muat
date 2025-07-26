@@ -1,0 +1,107 @@
+[
+	{
+		"nama": "Kursi",
+		"Stock": 45,
+		"Harga": 15000
+	},
+	{
+		"nama": "Meja",
+		"Stock": 0,
+		"Harga": 20000
+	},
+	{
+		"nama": "Bangku",
+		"Stock": 1,
+		"Harga": 123000
+	},
+	{
+		"nama": "Kursi",
+		"Stock": 1,
+		"Harga": 15000
+	},
+	{
+		"nama": "Meja",
+		"Stock": 3,
+		"Harga": 20000
+	},
+	{
+		"nama": "Bangku",
+		"Stock": 1,
+		"Harga": 123000
+	},
+	{
+		"nama": "Kursi",
+		"Stock": 0,
+		"Harga": 15000
+	},
+	{
+		"nama": "Meja",
+		"Stock": 1,
+		"Harga": 20000
+	},
+	{
+		"nama": "Bangku",
+		"Stock": 1,
+		"Harga": 123000
+	},
+	{
+		"nama": "Kursi",
+		"Stock": 17,
+		"Harga": 15000
+	},
+	{
+		"nama": "Meja",
+		"Stock": 1,
+		"Harga": 20000
+	},
+	{
+		"nama": "Bangku",
+		"Stock": 1,
+		"Harga": 123000
+	},
+	{
+		"nama": "Kursi",
+		"Stock": 1,
+		"Harga": 15000
+	},
+	{
+		"nama": "Meja",
+		"Stock": 1,
+		"Harga": 20000
+	},
+	{
+		"nama": "Bangku",
+		"Stock": 1,
+		"Harga": 123000
+	},
+	{
+		"nama": "Kursi",
+		"Stock": 1,
+		"Harga": 15000
+	},
+	{
+		"nama": "Meja",
+		"Stock": 1,
+		"Harga": 20000
+	},
+	{
+		"nama": "Bangku",
+		"Stock": 1,
+		"Harga": 123000
+	},
+	{
+		"nama": "Kursi",
+		"Stock": 1,
+		"Harga": 15000
+	},
+	{
+		"nama": "Meja",
+		"Stock": 1,
+		"Harga": 20000
+	},
+	{
+		"nama": "Bangku",
+		"Stock": 1,
+		"Harga": 123000
+	}
+]
