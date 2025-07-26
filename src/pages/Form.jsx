@@ -6,26 +6,26 @@ export const Add_data = () => {
 	const [harga, setHarga] = useState();
 	const [stok, setStok] = useState();
 
-	// const navigate = useNavigate();
+	const navigate = useNavigate();
 
-	const handleSubmit = (e) => {
-		e.prevenDefault();
+	const handleSubmit = async (e) => {
+		e.preventDefault();
 
-		// const data = {
-		// 	nama: nama.trim(),
-		// 	Harga: harga.trim(),
-		// 	Stock: stok.trim(),
-		// };
+		const data = {
+			nama: nama.trim(),
+			Harga: harga,
+			Stock: stok,
+		};
 
 		console.log(nama, harga, stok);
 
-		// try {
-		// 	setItems(data);
-		// } catch (error) {
-		// 	console.error("error", error);
-		// } finally {
-		// 	navigate("/");
-		// }
+		try {
+			await setItems(nama, harga, stok);
+		} catch (error) {
+			console.error("error", error);
+		} finally {
+			navigate("/");
+		}
 	};
 
 	return (
@@ -37,7 +37,7 @@ export const Add_data = () => {
 			</div>
 
 			<div className=" p-3 mx-3.5 flex flex-col gap-3">
-				<form>
+				<form onSubmit={handleSubmit}>
 					<div className="flex flex-col">
 						<label>Nama</label>
 						<input
@@ -75,7 +75,7 @@ export const Add_data = () => {
 					</div>
 
 					<div className="flex flex-col">
-						<button className="border shadow rounded" onClick={handleSubmit}>
+						<button className="border shadow rounded" type="submit">
 							submit
 						</button>
 					</div>

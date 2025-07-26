@@ -12,9 +12,17 @@ export const getAllItems = async () => {
 	return data ? JSON.parse(data) : [];
 };
 
-export const setItems = (data) => {
+export const setItems = async (nama, harga, stok) => {
+	const data = [
+		{
+			nama: nama,
+			Harga: harga,
+			Stok: stok,
+		},
+	];
+
 	// return data;
-	const final_data = getAllItems();
+	const final_data = await getAllItems();
 	final_data.push(data);
 
 	// localStorage.setItem(STORAGE_KEY, []);
