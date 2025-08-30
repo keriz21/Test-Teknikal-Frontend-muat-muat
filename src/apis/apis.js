@@ -13,21 +13,16 @@ export const getAllItems = async () => {
 };
 
 export const setItems = async (nama, harga, stok) => {
-	const data = [
-		{
-			nama: nama,
-			Harga: harga,
-			Stok: stok,
-		},
-	];
+	const newItem = {
+		nama: nama,
+		Harga: harga,
+		Stock: stok,
+	};
 
-	// return data;
-	const final_data = await getAllItems();
-	final_data.push(data);
+	const existing_data = await getAllItems();
+	existing_data.push(newItem);
 
-	// localStorage.setItem(STORAGE_KEY, []);
-
-	localStorage.setItem(STORAGE_KEY, JSON.stringify(final_data));
+	localStorage.setItem(STORAGE_KEY, JSON.stringify(existing_data));
 };
 
 export const fetchJsonDummy = async () => {
